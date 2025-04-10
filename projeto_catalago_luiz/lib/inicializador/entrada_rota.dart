@@ -14,7 +14,12 @@ class MinhaAplicacao extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Obras do Luiz',
       theme: ThemeData(
-        primarySwatch: Colors.indigo,
+        scaffoldBackgroundColor: const Color(0xFFB8860B),
+        appBarTheme: const AppBarTheme(
+          backgroundColor: Color(0xFF8B7500),
+          foregroundColor: Colors.white,
+        ),
+        cardColor: const Color(0xFFF5DEB3),
         useMaterial3: true,
       ),
       home: const VitrineObras(),

@@ -14,8 +14,22 @@ class VitrineObras extends StatelessWidget {
     ];
 
     return Scaffold(
+      floatingActionButton: FloatingActionButton(
+  backgroundColor: const Color(0xFF8B7500),
+  child: const Icon(Icons.home),
+  onPressed: () {
+    Navigator.pop(context); 
+  },
+),
+
+      backgroundColor: const Color.fromARGB(255, 239, 224, 185),
       appBar: AppBar(
-        title: const Text('Catálogo de Obras'),
+        backgroundColor: const Color.fromARGB(255, 156, 132, 72),
+        title: const Text(
+          'Catálogo de Obras',
+          style: TextStyle(color: Colors.white),
+        ),
+        iconTheme: const IconThemeData(color: Colors.white),
       ),
       body: ListView.builder(
         itemCount: listaDeObras.length,
